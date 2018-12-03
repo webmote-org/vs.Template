@@ -1,9 +1,9 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Mark",
-  "classifications": [ "microService", "Console","quantum","mark" ],
+  "author": "Webmote",
+  "classifications": [ "microService", "Console","quantum","webmote" ],
   "identity": "Quantum.MicroService",
-  "name": "科箭微服务Application",
+  "name": "微服务Application",
   "shortName": "qms",
   "tags": {
     "language": "C#"                       // Specify that this template is in C#.
