@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Quantum.MicroService</id>
+    <version>1.0.0</version>
+    <description>
+      科箭微服务模板
+    </description>
+    <authors>Mark(罗明华)</authors>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+</package>

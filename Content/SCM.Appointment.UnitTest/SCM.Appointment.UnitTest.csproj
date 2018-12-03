@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FakeItEasy" Version="4.5.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Fixture\GlobalFixture\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\SCM.FrameworkNetCore\Quantum.FrameworkNetCore.UnitTest\Quantum.FrameworkNetCore.UnitTest.csproj" />
+    <ProjectReference Include="..\..\SCM.FrameworkNetCore\Quantum.FrameworkNetCore\Quantum.FrameworkNetCore.csproj" />
+    <ProjectReference Include="..\SCM.Appointment.Service\SCM.Appointment.Service.csproj" />
+  </ItemGroup>
+
+</Project>

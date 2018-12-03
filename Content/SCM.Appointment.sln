@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ref", "Ref", "{644AE266-B107-4224-9B5B-F4C8ABA0E695}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.FrameworkNetCore", "..\SCM.FrameworkNetCore\Quantum.FrameworkNetCore\Quantum.FrameworkNetCore.csproj", "{64EBD0AA-B3EF-4968-BCCC-01BAE919B490}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.FrameworkNetCore.Extend", "..\SCM.FrameworkNetCore\Quantum.FrameworkNetCore.Extend\Quantum.FrameworkNetCore.Extend.csproj", "{B510A4AF-E251-41DF-B887-AE61ECDF1C60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.FrameworkNetCore.UnitTest", "..\SCM.FrameworkNetCore\Quantum.FrameworkNetCore.UnitTest\Quantum.FrameworkNetCore.UnitTest.csproj", "{81D6C4C7-EB22-4FAC-8759-672330FA183C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCM.Appointment.Models", "SCM.Appointment.Models\SCM.Appointment.Models.csproj", "{76DC091C-BEBF-4821-BE1D-CDE9A6BF5BA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCM.Appointment.Service", "SCM.Appointment.Service\SCM.Appointment.Service.csproj", "{06D69677-6B68-48B2-BD81-92E2EC260F06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCM.Appointment.UnitTest", "SCM.Appointment.UnitTest\SCM.Appointment.UnitTest.csproj", "{9F1BE9DB-D945-4E9E-9FB4-F00C271BC490}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SCM.RpcProxy.Common", "..\SCM.RpcProxy\SCM.RpcProxy.Common\SCM.RpcProxy.Common.csproj", "{32830233-991A-4790-B25E-DC6BC29912C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64EBD0AA-B3EF-4968-BCCC-01BAE919B490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64EBD0AA-B3EF-4968-BCCC-01BAE919B490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64EBD0AA-B3EF-4968-BCCC-01BAE919B490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64EBD0AA-B3EF-4968-BCCC-01BAE919B490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B510A4AF-E251-41DF-B887-AE61ECDF1C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B510A4AF-E251-41DF-B887-AE61ECDF1C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B510A4AF-E251-41DF-B887-AE61ECDF1C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B510A4AF-E251-41DF-B887-AE61ECDF1C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D6C4C7-EB22-4FAC-8759-672330FA183C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D6C4C7-EB22-4FAC-8759-672330FA183C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D6C4C7-EB22-4FAC-8759-672330FA183C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D6C4C7-EB22-4FAC-8759-672330FA183C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76DC091C-BEBF-4821-BE1D-CDE9A6BF5BA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DC091C-BEBF-4821-BE1D-CDE9A6BF5BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DC091C-BEBF-4821-BE1D-CDE9A6BF5BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DC091C-BEBF-4821-BE1D-CDE9A6BF5BA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D69677-6B68-48B2-BD81-92E2EC260F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D69677-6B68-48B2-BD81-92E2EC260F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D69677-6B68-48B2-BD81-92E2EC260F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D69677-6B68-48B2-BD81-92E2EC260F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F1BE9DB-D945-4E9E-9FB4-F00C271BC490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F1BE9DB-D945-4E9E-9FB4-F00C271BC490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F1BE9DB-D945-4E9E-9FB4-F00C271BC490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F1BE9DB-D945-4E9E-9FB4-F00C271BC490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32830233-991A-4790-B25E-DC6BC29912C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32830233-991A-4790-B25E-DC6BC29912C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32830233-991A-4790-B25E-DC6BC29912C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32830233-991A-4790-B25E-DC6BC29912C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64EBD0AA-B3EF-4968-BCCC-01BAE919B490} = {644AE266-B107-4224-9B5B-F4C8ABA0E695}
+		{B510A4AF-E251-41DF-B887-AE61ECDF1C60} = {644AE266-B107-4224-9B5B-F4C8ABA0E695}
+		{81D6C4C7-EB22-4FAC-8759-672330FA183C} = {644AE266-B107-4224-9B5B-F4C8ABA0E695}
+		{32830233-991A-4790-B25E-DC6BC29912C1} = {644AE266-B107-4224-9B5B-F4C8ABA0E695}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A44F95B-E8DF-4E72-9F7F-FC943EFC5209}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

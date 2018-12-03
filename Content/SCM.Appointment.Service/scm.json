@@ -1,0 +1,181 @@
+{
+  "QuantumConfig": {
+    "RpcService": {
+      "Pool": 1,
+      "Port": 20001,
+      "Ip": "192.168.100.*",
+      "ServerType": 2,
+      "AssemblyPath": "SCM.Appointment.Service.dll",
+      "Enable": true
+    },
+    "ConfigCenter": {
+      "ConfigType": 1,
+      "Ip": "192.168.100.168:2181",
+      "SessionTimeout": 5000
+    }
+  },
+  "ConfigLog": {
+    "LogLocation": "Local",
+    "ShowConsole": 1,
+    "Filter": [
+      {
+        "FilterGroup": "Error",
+        "FilterApiName": "*",
+        "FilterServiceName": "*",
+        "FilterWords": "*",
+        "LogLevel": "Error",
+        "MaxSize": 1000
+      },
+      {
+        "FilterGroup": "FilterGroup",
+        "FilterApiName": "FilterApiName",
+        "FilterServiceName": "FilterServiceName",
+        "FilterWords": "FilterWords",
+        "LogLevel": "LogLevel",
+        "MaxSize": 1000
+      }
+    ]
+  },
+  "ConstKeyValue": {
+    "Items": [
+      {
+        "Key": "ScmAppointmentContext",
+        "Value": "AMS"
+      }
+    ]
+  },
+  "DataBase": {
+    "RefFile": "true",
+    "DbFile": "DataBase.config",
+    "SqlFile": "MySql.config"
+  },
+  "FileServer": {
+    "Items": [
+      {
+        "Pool": 1,
+        "Url": "http://192.168.100.121:5002"
+      },
+      {
+        "Pool": 1,
+        "Url": "http://192.168.100.121:5002"
+      }
+    ]
+  },
+  "RabbitMQ": {
+    "Host": [
+      {
+        "Name": "Default",
+        "Ip": "192.168.100.106",
+        "Port": 5672,
+        "UserName": "quantum",
+        "PassWord": "quantum123"
+      },
+      {
+        "Name": "Log",
+        "Ip": "192.168.100.106",
+        "Port": 5672,
+        "UserName": "quantum",
+        "PassWord": "quantum123"
+      }
+    ]
+  },
+  "RedisConfig": {
+    "Nodes": [
+      {
+        "NodeName": "resource",
+        "IsMasterSlave": false,
+        "Items": [
+          {
+            "Pool": 1,
+            "IsMaster": false,
+            "Server": "192.168.100.106",
+            "Port": 6379,
+            "AllowAdmin": true,
+            "ConnectTimeout": 4000,
+            "Ssl": true,
+            "Pwd": "devMySql6379"
+          },
+          {
+            "Pool": 1,
+            "IsMaster": false,
+            "Server": "192.168.100.106",
+            "Port": 6379,
+            "AllowAdmin": true,
+            "ConnectTimeout": 4000,
+            "Ssl": true,
+            "Pwd": "devMySql6379"
+          }
+        ]
+      },
+      {
+        "NodeName": "default",
+        "IsMasterSlave": false,
+        "Items": [
+          {
+            "Pool": 1,
+            "IsMaster": false,
+            "Server": "192.168.100.106",
+            "Port": 6379,
+            "AllowAdmin": true,
+            "ConnectTimeout": 4000,
+            "Ssl": true,
+            "Pwd": "devMySql6379"
+          },
+          {
+            "Pool": 1,
+            "IsMaster": false,
+            "Server": "192.168.100.106",
+            "Port": 6379,
+            "AllowAdmin": true,
+            "ConnectTimeout": 4000,
+            "Ssl": true,
+            "Pwd": "devMySql6379"
+          }
+        ]
+      }
+    ]
+  },
+  "RpcClients": {
+    "Clients": [
+      {
+        "ServerName": "SCMUUIDS",
+        "RouterType": 2,
+        "Items": [
+          {
+            "Pool": 1,
+            "Ip": "192.168.100.121",
+            "Port": 20005,
+            "ServerType": 2,
+            "Enable": true
+          }
+        ]
+      },
+      {
+        "ServerName": "SCMConfigrationService",
+        "RouterType": 2,
+        "Items": [
+          {
+            "Pool": 1,
+            "Ip": "192.168.100.121",
+            "Port": 20003,
+            "ServerType": 2,
+            "Enable": true
+          }
+        ]
+      },
+      {
+        "ServerName": "SCMBaseService",
+        "RouterType": 2,
+        "Items": [
+          {
+            "Pool": 1,
+            "Ip": "192.168.100.121",
+            "Port": 20001,
+            "ServerType": 2,
+            "Enable": true
+          }
+        ]
+      }
+    ]
+  }
+}
